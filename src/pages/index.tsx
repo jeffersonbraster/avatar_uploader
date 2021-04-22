@@ -1,5 +1,6 @@
 import { CropImage } from 'components/CropImage'
 import { ImageInput } from 'components/ImageInput'
+import { Slider } from 'components/Slider'
 import { BsCardImage } from 'react-icons/bs'
 
 import styles from './home.module.scss'
@@ -21,6 +22,7 @@ export default function Home() {
       </div>
 
       <CropImage />
+      <Slider />
     </>
   )
 }

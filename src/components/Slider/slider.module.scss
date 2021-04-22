@@ -1,0 +1,23 @@
+.container {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  p {
+    margin-left: -0.4rem;
+    color: var(--text);
+  }
+
+  button {
+    background: #3d485f;
+    color: #fff;
+    border-radius: 4rem;
+    font-size: 0.875rem;
+    align-self: flex-end;
+
+    width: 8rem;
+    margin-top: 0.9rem;
+    padding: 0.5rem 2rem;
+  }
+}
