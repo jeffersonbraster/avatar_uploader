@@ -1,4 +1,5 @@
 import { CropImage } from 'components/CropImage'
+import { ImageInput } from 'components/ImageInput'
 import { BsCardImage } from 'react-icons/bs'
 
 import styles from './home.module.scss'
@@ -15,6 +16,7 @@ export default function Home() {
             </span>
             Drop the image here or click to browse.
           </p>
+          <ImageInput />
         </div>
       </div>
 
