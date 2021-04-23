@@ -16,19 +16,4 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
-  position: relative;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
-
-  span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
 }

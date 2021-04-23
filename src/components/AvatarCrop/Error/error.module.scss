@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: red;
+
+  strong {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
