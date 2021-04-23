@@ -22,7 +22,7 @@ export const CropImage = () => {
         aspect={1}
         cropShape="round"
         onCropChange={setValueCrop}
-        zoom={zoom}
+        zoom={Number(zoom)}
         onZoomChange={setZoom}
         disableAutomaticStylesInjection
       />

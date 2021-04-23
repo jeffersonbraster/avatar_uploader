@@ -1,4 +1,4 @@
-import { createContext, Dispatch, useContext, useState } from 'react'
+import { createContext, useContext, useState, Dispatch } from 'react'
 
 type Status = {
   start: boolean
@@ -6,11 +6,13 @@ type Status = {
   error: boolean
 }
 
+type ZoomProps = number | number[] | undefined
+
 type AvatarContextData = {
-  src: string
+  src: string | undefined
   status: Status
-  zoom: number
-  setZoom: Dispatch<React.SetStateAction<number>>
+  zoom: ZoomProps | undefined
+  setZoom: Dispatch<React.SetStateAction<ZoomProps>>
   handleSave: () => void
   handleFileChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleCancel: () => void
@@ -24,7 +26,7 @@ type AvatarProviderProps = {
 
 const AvatarProvider = ({ children }: AvatarProviderProps) => {
   const [src, setSrc] = useState<string>('')
-  const [zoom, setZoom] = useState<number>(1)
+  const [zoom, setZoom] = useState<ZoomProps>(1)
   const [status, setStatus] = useState<Status>({
     start: true,
     final: false,

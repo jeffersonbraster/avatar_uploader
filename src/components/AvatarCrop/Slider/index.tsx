@@ -6,8 +6,6 @@ import styles from './slider.module.scss'
 export const Slider = () => {
   const { zoom, setZoom, handleSave } = useAvatar()
 
-  console.log(zoom)
-
   return (
     <div className={styles.container}>
       <p>Crop</p>
