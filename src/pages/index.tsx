@@ -1,28 +1,56 @@
 import { CropImage } from 'components/CropImage'
 import { ImageInput } from 'components/ImageInput'
 import { Slider } from 'components/Slider'
+import { useAvatar } from 'hooks/use-avatar'
 import { BsCardImage } from 'react-icons/bs'
 
 import styles from './home.module.scss'
 
 export default function Home() {
-  return (
-    <>
-      <div className={styles.box}>
-        <div className={styles.boxContainer}>
-          <p className={styles.container}>
-            <span>
-              <BsCardImage title="Image Icon" />
-              <strong>Organization Logo</strong>
-            </span>
-            Drop the image here or click to browse.
-          </p>
-          <ImageInput />
-        </div>
-      </div>
+  const {
+    src,
+    status: { start, error, final }
+  } = useAvatar()
 
-      <CropImage />
-      <Slider />
-    </>
+  return (
+    <div className={styles.box}>
+      <div className={styles.boxContainer}>
+        {start && (
+          <>
+            <p className={styles.container}>
+              <span>
+                <BsCardImage title="Image Icon" />
+                <strong>Organization Logo</strong>
+                Drop the image here or click to browse.
+              </span>
+            </p>
+            <ImageInput />
+          </>
+        )}
+
+        {src && !final && (
+          <>
+            <CropImage />
+            <Slider />
+          </>
+        )}
+
+        {final && (
+          <>
+            <CropImage />
+
+            <p className={styles.container}>
+              <span>
+                <BsCardImage title="Image Icon" />
+                <strong>Organization Logo</strong>
+                Drop the image here or click to browse.
+              </span>
+            </p>
+
+            <ImageInput />
+          </>
+        )}
+      </div>
+    </div>
   )
 }

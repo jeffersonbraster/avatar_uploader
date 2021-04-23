@@ -1,3 +1,4 @@
+import { AvatarProvider } from 'hooks/use-avatar'
 import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head'
 
@@ -5,7 +6,7 @@ import '../styles/global.scss'
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <AvatarProvider>
       <Head>
         <title>Avatar upload</title>
 
@@ -16,7 +17,7 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Component {...pageProps} />
-    </>
+    </AvatarProvider>
   )
 }
 

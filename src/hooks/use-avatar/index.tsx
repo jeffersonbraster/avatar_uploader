@@ -7,10 +7,10 @@ type Status = {
 }
 
 type AvatarContextData = {
-  src: string | null
+  src: string
   status: Status
-  zoom: number | number[]
-  setZoom: Dispatch<React.SetStateAction<number | number[]>>
+  zoom: number
+  setZoom: Dispatch<React.SetStateAction<number>>
   handleSave: () => void
   handleFileChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleCancel: () => void
@@ -23,8 +23,8 @@ type AvatarProviderProps = {
 }
 
 const AvatarProvider = ({ children }: AvatarProviderProps) => {
-  const [src, setSrc] = useState<string | null>(null)
-  const [zoom, setZoom] = useState<number | number[]>(1)
+  const [src, setSrc] = useState<string>('')
+  const [zoom, setZoom] = useState<number>(1)
   const [status, setStatus] = useState<Status>({
     start: true,
     final: false,
@@ -37,7 +37,7 @@ const AvatarProvider = ({ children }: AvatarProviderProps) => {
     if (e.target.files && e.target.files.length > 0) {
       const file = e.target.files[0]
       if (!types.includes(file.type)) {
-        setSrc(null)
+        setSrc('')
         setStatus({ start: false, final: false, error: true })
 
         return null
@@ -46,7 +46,7 @@ const AvatarProvider = ({ children }: AvatarProviderProps) => {
       setStatus({ ...status, start: false, final: false })
 
       const imageData = await readFile(file)
-      setSrc(imageData)
+      setSrc(String(imageData))
     }
   }
 
@@ -59,7 +59,7 @@ const AvatarProvider = ({ children }: AvatarProviderProps) => {
   }
 
   const handleCancel = () => {
-    setSrc(null)
+    setSrc('')
     setStatus({ start: true, final: false, error: false })
   }
 
