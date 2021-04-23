@@ -1,3 +1,4 @@
+import { ButtonClose } from 'components/ButtonClose'
 import { CropImage } from 'components/CropImage'
 import { ImageInput } from 'components/ImageInput'
 import { Slider } from 'components/Slider'
@@ -50,6 +51,8 @@ export default function Home() {
             <ImageInput />
           </>
         )}
+
+        {!start && !final && <ButtonClose />}
       </div>
     </div>
   )
