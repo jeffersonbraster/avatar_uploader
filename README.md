@@ -8,9 +8,13 @@
     <img src="https://img.shields.io/static/v1?label=Next&message=JS&color=blue?style=plastic&logo=Next.js" alt="NextJS" />
   </a>
 </p>
-<p align="center"><img src="./.github/img/crop1" /></p>
-<p align="center"><img src="./.github/img/crop2" /></p>
-<p align="center"><img src="./.github/img/crop3" /></p>
+<p align="center"><img src=".github/img/crop1.png" /></p>
+<p align="center"><img src=".github/img/crop2.png" /></p>
+<p align="center"><img src=".github/img/crop3.png" /></p>
+
+## Demo
+
+<p>Layout: <a href="https://crop-avatar.jeffersonbrandao.com.br/" target="__blank">Project Link</a></p>
 
 ---
 
