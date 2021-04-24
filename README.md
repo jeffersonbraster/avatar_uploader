@@ -1,58 +1,59 @@
+<h1 align="center">Crop Avatar</h1>
+<p align="center">Simple Component in nextJS</p>
+<p align="center">
+  <a href="https://reactjs.org/">
+    <img src="https://img.shields.io/static/v1?label=React&message=JS&color=blue?style=plastic&logo=React" alt="ReactJS" />
+  </a>
+  <a href="https://nextjs.org/">
+    <img src="https://img.shields.io/static/v1?label=Next&message=JS&color=blue?style=plastic&logo=Next.js" alt="NextJS" />
+  </a>
+</p>
+<p align="center"><img src="./.github/img/crop1" /></p>
+<p align="center"><img src="./.github/img/crop2" /></p>
+<p align="center"><img src="./.github/img/crop3" /></p>
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+---
 
-This is a [Next.js](https://nextjs.org/) boilerplate.
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
-## What is inside?
+## About
 
-This project uses lot of stuff as:
+A simple Next component using typescript to let users upload and crop avatars.
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+### Technologies
 
-## Getting Started
+<ul>
+    <li>React</li>
+    <li>Next</li>
+    <li>Typescript</li>
+    <li>react-easy-crop</li>
+    <li>SASS</li>
+    <li>react-icons</li>
+</ul>
+<h2>Figma</h2>
+<p>Layout: <a href="https://www.figma.com/file/3Ki7sTwdPpxDSDkeVhBMUl/crop-avatar-upload" target="__blank">Project Link</a></p>
 
-First, run the development server:
+## Run Project
 
-```bash
-npm run dev
-# or
+Clone Project
+
+```git
+git clone https://github.com/jeffersonbraster/avatar_uploader.git
+```
+
+Web
+
+```ssh
+yarn
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Author
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Jefferson Brandão - [GitHub](https://github.com/jeffersonbraster) / [Linkedin](https://www.linkedin.com/in/jefferson-brandao-dev/) / [Email](mailto:jeffersonbraster@gmail.com)
 
-## Commands
+## License
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+This project use MIT license, see the file [LICENSE](./LICENSE.md) for more details
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">Develop by <a href="https://github.com/jeffersonbraster">Jefferson Brandão</a></p>
